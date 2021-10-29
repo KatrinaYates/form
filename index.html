@@ -78,8 +78,9 @@
                 <!-- drop down  -->
                 <!-- This will also be the beginning of the flow control -->
                 <div class="col-md-3">                
-                    <label for="season" class="form-label">Choose a Season:</label>
+                    <label for="season" class="form-label">Choose a season:</label>
                     <select id="season" name="season" class="form-control" required>
+                        <option>Click for seasons</option>                       
                         <option value="fall">Fall</option>
                         <option value="winter">Winter</option>
                         <option value="spring">Spring</option>
@@ -90,7 +91,7 @@
                 <!-- drop downs that will be apart of the flow control! -->
                 <!-- not set as 'required' right now -->
                 <div class="col-md-3">                
-                    <label for="holidayFall" class="form-label">Choose a Fall Holiday:</label>
+                    <label for="holidayFall" class="form-label">Choose a fall holiday:</label>
                     <select id="holidayFall" name="holidayFall" class="form-control">
                         <option value="halloween">Halloween</option>
                         <option value="thanksgiving">Thanksgiving</option>
@@ -98,7 +99,7 @@
                 </div>
 
                 <div class="col-md-3">                
-                    <label for="holidayWinter" class="form-label">Choose a Winter Holiday:</label>
+                    <label for="holidayWinter" class="form-label">Choose a winter holiday:</label>
                     <select id="holidayWinter" name="holidayWinter" class="form-control">
                         <option value="christmas">Christmas</option>
                         <option value="newYork">New Year</option>
@@ -106,7 +107,7 @@
                 </div>
 
                 <div class="col-md-3">                
-                    <label for="holidaySpring" class="form-label">Choose a Spring Holiday:</label>
+                    <label for="holidaySpring" class="form-label">Choose a spring holiday:</label>
                     <select id="holidaySpring" name="holidaySpring" class="form-control">
                         <option value="valentines">Valentines Day</option>
                         <option value="cincoDeMayo">Cinco De Mayo</option>
@@ -114,7 +115,7 @@
                 </div>
 
                 <div class="col-md-3">                
-                    <label for="holidaySummer" class="form-label">Choose a Summer Holiday:</label>
+                    <label for="holidaySummer" class="form-label">Choose a summer holiday:</label>
                     <select id="holidaySummer" name="holidaySummer" class="form-control">
                         <option value="memorial">Memorial Day</option>
                         <option value="independence">Independence Day</option>
@@ -125,8 +126,8 @@
                 <!-- radio -->
                 <div class="col-md-3">
                     <label for="language" class="form-label">Choose a language:</label>
-                    <div id="language" class="form-control" required>
-                        <input type="radio" id="html" name="fav_language" value="HTML">
+                    <div id="language" class="form-control">
+                        <input type="radio" id="html" name="fav_language" value="HTML" required>
                         <label for="html">HTML</label><br>
                         <input type="radio" id="css" name="fav_language" value="CSS">
                         <label for="css">CSS</label><br>
@@ -138,7 +139,7 @@
                 <!-- checkbox -->
                 <div class="col-md-3">
                     <label for="enjoy" class="form-label">I enjoy:</label>
-                    <div id="enjoy" class="form-control" required>
+                    <div id="enjoy" class="form-control">
                         <input type="checkbox" id="hiking" name="hiking" value="hiking">
                         <label for="hiking"> hiking</label><br>
                         <input type="checkbox" id="programming" name="programming" value="programming">
@@ -151,7 +152,7 @@
                 <!-- color selector -->
                 <div class="col-md-3">
                     <label for="favcolor" class="form-label">Select your favorite color:</label>
-                    <input type="color" id="favcolor" name="favcolor" class="form-control form-control-lg" required>
+                    <input type="color" id="favcolor" name="favcolor" class="form-control form-control-lg">
                 </div>
 
                 <!-- text area -->
@@ -174,6 +175,6 @@
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous'></script>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
     <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js' integrity='sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=' crossorigin='anonymous'></script>
-    <script src="scripts/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
