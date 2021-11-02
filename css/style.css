@@ -8,3 +8,11 @@ body {
 fieldset{
     background-color: rgba(0, 0, 0, 0.13);
 }
+
+span {
+    color: rgb(170, 0, 0);
+}
+
+#fall, #winter, #spring, #summer {
+    display: none;
+}
