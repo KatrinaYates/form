@@ -52,5 +52,11 @@ $(document).ready(function() {
 		}
   });
 
-});
+  //load info from JSON data
+  // $("#loadData").click(function() {
+  //   $.getJSON("../demo.js?callback=showJSON", function(result){
+  //     $.each(result, function(i, field){
+  //       $("div").append(field + " ");
+  // });
 
+});
