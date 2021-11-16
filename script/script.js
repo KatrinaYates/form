@@ -72,10 +72,9 @@ $(document).ready(function() {
           $("#phone").val(data.phone);
           $("#birthdaytime").val(data.birthdaytime);
           $("#season").val(data.season);
-
-            
-
-
+          $("#holidayFall").val(data.holidayFall);
+          $("#language").val(data.language);
+          $("#enjoy").val(data.enjoy);
 
 
         }

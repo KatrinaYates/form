@@ -4,5 +4,8 @@
     "pwd" : "ThisIsMyPassword0102",
     "phone" : "256-987-4532",
     "birthdaytime" : "1992-05-23T13:00",
-    "season" : "fall"
+    "season" : "fall",
+    "holidayFall" : "thanksgiving",
+    "language" : "html",
+    "enjoy" : ["sleeping", "programming"]
 }
