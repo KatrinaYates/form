@@ -17,32 +17,37 @@ $(document).ready(function() {
   });
 
   // create a flow of choices
-  $("#season").change (function() {
-    $("#allSeason").removeClass("col-md-12").addClass("col-md-6");
-    $("#fall").hide();
-    $("#winter").hide();
-    $("#spring").hide();
-    $("#summer").hide();
+  var seasons = function() {
+    $("#season").change (function() {
+      $("#allSeason").removeClass("col-md-12").addClass("col-md-6");
+      $("#fall").hide();
+      $("#winter").hide();
+      $("#spring").hide();
+      $("#summer").hide();
+  
+      let x = this.value
+      switch(x) {
+        case "fall":
+          $("#fall").show();
+          break;
+        case "winter":
+          $("#winter").show();
+          break;
+        case "spring":
+          $("#spring").show();
+          break;
+        case "summer":
+          $("#summer").show();
+          break;
+        default:
+          break;
+      };
+    });
+  };
 
-    let x = this.value
-    switch(x) {
-      case "fall":
-        $("#fall").show();
-        break;
-      case "winter":
-        $("#winter").show();
-        break;
-      case "spring":
-        $("#spring").show();
-        break;
-      case "summer":
-        $("#summer").show();
-        break;
-      default:
-        break;
-    };
+  seasons();
 
-  });
+
 
   // validate that everything has been filled out
   $("form").submit(function(){
@@ -52,11 +57,36 @@ $(document).ready(function() {
 		}
   });
 
-  //load info from JSON data
-  // $("#loadData").click(function() {
-  //   $.getJSON("../demo.js?callback=showJSON", function(result){
-  //     $.each(result, function(i, field){
-  //       $("div").append(field + " ");
-  // });
+  $('#loadData').click(function() {
+
+    let jsonURL = "demo.json";
+    seasons();
+
+    $.ajax({
+        url: jsonURL,
+        dataType: "json",
+        success: function(data) {
+          $("#name").val(data.name);
+          $("#email").val(data.email);
+          $("#pwd").val(data.pwd);
+          $("#phone").val(data.phone);
+          $("#birthdaytime").val(data.birthdaytime);
+          $("#season").val(data.season);
+
+            
+
+
+
+
+        }
+    });
+    
+
+
+  });
+
+
+
+
 
 });

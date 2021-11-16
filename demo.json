@@ -1,4 +1,8 @@
 {
-    "fName": "Amy",
-    "lName" : "Smith"
+    "name": "Amy Smith",
+    "email" : "Asmith@email.com",
+    "pwd" : "ThisIsMyPassword0102",
+    "phone" : "256-987-4532",
+    "birthdaytime" : "1992-05-23T13:00",
+    "season" : "fall"
 }

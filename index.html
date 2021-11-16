@@ -15,24 +15,21 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" type="button" target="_blank" href="https://github.com/KatrinaYates/form">My Code</a>
+              <a class="btn btn-light btn-outline-dark" target="_blank" href="https://github.com/KatrinaYates/form">My Code</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" type="button" target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatrinayates.github.io%2Fform%2F">Validator</a>
+              <a class="btn btn-light btn-outline-dark" target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatrinayates.github.io%2Fform%2F">Validator</a>
             </li>
             <li class="nav-item">
-                <a id="loadData" type="button" class="nav-link" target="_blank" href="">Load Data</a>
-              </li>
-
+                <a id="loadData" class="btn btn-light btn-outline-dark">Load Data</a>
+            </li>
           </ul>
         </div>
-      </nav>
+    </nav>
 
     <!-- main section -->
     <main class="p-5">
@@ -41,11 +38,11 @@
         <form class="p-3">
             <fieldset class="border p-5 row g-3 m-3">
                 <legend>About You:</legend>
-                
+
                 <!-- text entry -->
                 <div class="col-md-4">
-                    <label for="fname" class="form-label">Name:<span>*</span></label>
-                    <input type="text" id="fname" name="fname" class="form-control" placeholder="Jane Doe" required autofocus>
+                    <label for="name" class="form-label">Name:<span>*</span></label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required autofocus>
                 </div>
 
                 <!-- text entry that requires an @ sign -->
