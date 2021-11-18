@@ -7,5 +7,6 @@
     "season" : "fall",
     "holidayFall" : "thanksgiving",
     "language" : "html",
-    "enjoy" : ["sleeping", "programming"]
+    "enjoy" : "sleeping",
+    "favcolor" : "#33cccc"
 }

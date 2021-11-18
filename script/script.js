@@ -18,14 +18,13 @@ $(document).ready(function() {
 
   // create a flow of choices
   var seasons = function() {
-    $("#season").change (function() {
       $("#allSeason").removeClass("col-md-12").addClass("col-md-6");
       $("#fall").hide();
       $("#winter").hide();
       $("#spring").hide();
       $("#summer").hide();
   
-      let x = this.value
+      let x = $("#season").val();
       switch(x) {
         case "fall":
           $("#fall").show();
@@ -42,11 +41,11 @@ $(document).ready(function() {
         default:
           break;
       };
-    });
   };
 
-  seasons();
-
+  $("#season").change (function() {
+    seasons();
+  });
 
 
   // validate that everything has been filled out
@@ -60,7 +59,6 @@ $(document).ready(function() {
   $('#loadData').click(function() {
 
     let jsonURL = "demo.json";
-    seasons();
 
     $.ajax({
         url: jsonURL,
@@ -75,9 +73,31 @@ $(document).ready(function() {
           $("#holidayFall").val(data.holidayFall);
           $("#language").val(data.language);
           $("#enjoy").val(data.enjoy);
+          $("#favcolor").val(data.favcolor);
 
+          seasons();
 
+          //Auto check radio section
+          $('input[type=radio]').each(function () {
+            if (data.language === $(this).val())
+            {
+              $(this).prop('checked', true)
+                console.log($(this));
+            }
+          });
+
+          //Auto check checkbox section
+          $('input[type=checkbox]').each(function () {
+            if (data.enjoy === $(this).val())
+            {
+              $(this).prop('checked', true)
+                console.log($(this));
+            }
+          });
         }
+
+
+
     });
     
 
